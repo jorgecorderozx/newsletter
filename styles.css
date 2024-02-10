@@ -1,0 +1,79 @@
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Roboto, "sans serif";
+    line-height: 1.5;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.initialForm {
+    flex-direction: column;
+}
+
+section {
+    padding: 2.3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--dark-slate-grey);
+    
+}
+
+h1, p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    background: url(assets/images/icon-list.svg) no-repeat left 20%;
+    padding: 0.3rem 0 0.3rem 2.3rem;
+}
+
+h4 {
+    font-size: 0.7rem;
+    margin-top: 1.2rem;
+}
+
+input[type="email"]{
+    border-color: var(--grey);
+    border-width: 1px;
+    margin-top: 0.5rem;
+}
+
+button[type="submit"]{
+    border: none;
+    background-color: var(--dark-slate-grey);
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+input[type="email"], button[type="submit"]{
+    padding: 1.3rem 0.7rem;
+    border-radius: 0.5rem;
+}
+
+.successSection {
+    display: none;
+}
+
